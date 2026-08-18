@@ -37,7 +37,7 @@ export class ConcessionariaService{
 
         await this.buscarPorId(id);
         const concessionariaAtualizada = new Concessionaria(nome, cnpj, cidade, id);
-        return await this.repository.atualizar(id, concessionariaAtualizado);
+        return await this.repository.atualizar(id, concessionariaAtualizada);
     }
 
     async excluir(id) {
